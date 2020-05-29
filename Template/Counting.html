@@ -1,0 +1,14 @@
+<a href="{% url "homepage" %}"> Return </a>
+<br>
+<h1> Your Text:</h1>
+
+{{Text}}
+<br>
+<h1>Your text has {{WordCount}} words</h1>
+
+<h1>Words:</h1>
+
+{% for words, CountTotal in Dictionary %}
+<h3>{{ words }} - {{CountTotal}}</h3>
+
+{% endfor %}
